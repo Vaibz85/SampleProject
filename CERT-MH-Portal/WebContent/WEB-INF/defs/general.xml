@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="common" template="/WEB-INF//layout/classic.jsp">
+		<put-attribute name="menu" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="CERT-MH" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current" value="index"/>
+	</definition>
+	
+	<definition name="bulletins" extends="common">
+		<put-attribute name="title" value="Bulletins" />
+		<put-attribute name="body" value="/WEB-INF/jsp/bulletins.jsp" />
+		<put-attribute name="current" value="bulletins"/>
+	</definition>
+	
+	<definition name="bulletin-details" extends="common">
+		<put-attribute name="title" value="Bulletin" />
+		<put-attribute name="body" value="/WEB-INF/jsp/bulletin-details.jsp" />
+		<put-attribute name="current" value="bulletin-details"/>
+	</definition>
+	
+	<definition name="alerts" extends="common">
+		<put-attribute name="title" value="Alerts" />
+		<put-attribute name="body" value="/WEB-INF/jsp/alerts.jsp" />
+		<put-attribute name="current" value="alerts"/>
+	</definition>
+	
+	<definition name="alert-details" extends="common">
+		<put-attribute name="title" value="Alert" />
+		<put-attribute name="body" value="/WEB-INF/jsp/alert-details.jsp" />
+		<put-attribute name="current" value="alert-details"/>
+	</definition>
+	
+	<definition name="tips" extends="common">
+		<put-attribute name="title" value="Tips" />
+		<put-attribute name="body" value="/WEB-INF/jsp/tips.jsp" />
+		<put-attribute name="current" value="tips"/>
+	</definition>
+	
+	<definition name="tip-details" extends="common">
+		<put-attribute name="title" value="Tip" />
+		<put-attribute name="body" value="/WEB-INF/jsp/tip-details.jsp" />
+		<put-attribute name="current" value="tip-details"/>
+	</definition>
+	
+	<definition name="advisories" extends="common">
+		<put-attribute name="title" value="Advisories" />
+		<put-attribute name="body" value="/WEB-INF/jsp/advisories.jsp" />
+		<put-attribute name="current" value="advisories"/>
+	</definition>
+	
+	<definition name="advisory-details" extends="common">
+		<put-attribute name="title" value="Advisory" />
+		<put-attribute name="body" value="/WEB-INF/jsp/advisory-details.jsp" />
+		<put-attribute name="current" value="advisory-details"/>
+	</definition>
+	
+	<definition name="about" extends="common">
+		<put-attribute name="title" value="About" />
+		<put-attribute name="body" value="/WEB-INF/jsp/about.jsp" />
+		<put-attribute name="current" value="about"/>
+	</definition>
+	
+	<definition name="training" extends="common">
+		<put-attribute name="title" value="Training" />
+		<put-attribute name="body" value="/WEB-INF/jsp/training.jsp" />
+		<put-attribute name="current" value="training"/>
+	</definition>
+	
+	<definition name="training-details" extends="common">
+		<put-attribute name="title" value="Training Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/training-details.jsp" />
+		<put-attribute name="current" value="training-details"/>
+	</definition>
+	
+	<definition name="training-registration" extends="common">
+		<put-attribute name="title" value="Training Registration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/training-registration.jsp" />
+		<put-attribute name="current" value="training-registration"/>
+	</definition>
+	
+	<definition name="service" extends="common">
+		<put-attribute name="title" value="Service" />
+		<put-attribute name="body" value="/WEB-INF/jsp/service.jsp" />
+		<put-attribute name="current" value="service"/>
+	</definition>
+	
+	<definition name="malware-reporting" extends="common">
+		<put-attribute name="title" value="Malware Reporting" />
+		<put-attribute name="body" value="/WEB-INF/jsp/malware-reporting.jsp" />
+		<put-attribute name="current" value="malware-reporting" />
+	</definition>
+	
+	<definition name="incident-reporting" extends="common">
+		<put-attribute name="title" value="Incident Reporting" />
+		<put-attribute name="body" value="/WEB-INF/jsp/incident-reporting.jsp" />
+		<put-attribute name="current" value="incident-reporting" />
+	</definition>
+	
+		
+	<definition name="register" extends="common">
+		<put-attribute name="title" value="User Registration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+		<put-attribute name="current" value="register"/>
+	</definition>
+	
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+		<put-attribute name="current" value="login"/>
+	</definition>
+	
+	<definition name="incident-management" extends="common">
+		<put-attribute name="title" value="incident-management" />
+		<put-attribute name="body" value="/WEB-INF/jsp/incident-management.jsp" />
+		<put-attribute name="current" value="incident-management"/>
+	</definition>
+	
+	<definition name="service-request-form" extends="common">
+		<put-attribute name="title" value="Service Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/service-request-form.jsp" />
+		<put-attribute name="current" value="service-request-form"/>
+	</definition>
+	
+	
+	
+	
+	<definition name="account" extends="common">
+		<put-attribute name="title" value="User Account" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/account.jsp" />
+		<put-attribute name="current" value="account"/>
+	</definition>
+	
+	<definition name="incident-reports" extends="common">
+		<put-attribute name="title" value="Incident Reports" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/incident-reports.jsp" />
+		<put-attribute name="current" value="incident-reports"/>
+	</definition>
+</tiles-definitions>
